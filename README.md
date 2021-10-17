@@ -1,2 +1,5 @@
-# static-asl-interpreter
-Static ASL Interpreter using RGB Images
+# Static ASL Interpreter
+
+* Static American Sign Language Interpreter using RGB Images
+
+* dataset: <https://www.kaggle.com/grassknoted/asl-alphabet>
