@@ -42,7 +42,7 @@ if args.num_workers:
     NUM_WORKERS = int(args.num_workers)
 if args.epochs:
     EPOCHS = int(args.epochs)
-if args.epochs:
+if args.train_dataset:
     TRD = args.train_dataset
 if args.save:
     SAVE = args.save
