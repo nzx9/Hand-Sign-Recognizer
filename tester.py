@@ -7,12 +7,12 @@ from src.dataloaders import Dataloader
 
 parser = argparse.ArgumentParser()
 
+parser.add_argument("-tsd", "--test_dataset",
+                    help="Path to testing dataset")
 parser.add_argument("-b", "--batch_size", help="Batch size of dataloader")
 parser.add_argument("-n", "--num_workers",
                     help="Number of workers in dataloader")
 parser.add_argument("-p", "--pth_file", help="File path to .pth file")
-parser.add_argument("-tsd", "--test_dataset",
-                    help="Path to testing dataset")
 parser.add_argument(
     "-s", "--save", help="Name of the output files need to save")
 parser.add_argument("-c", "--confusion_matrix", help="Show Confusion Matrix")
