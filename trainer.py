@@ -9,16 +9,14 @@ from src.dataloaders import Dataloader
 parser = argparse.ArgumentParser()
 
 # Adding optional argument
+parser.add_argument("-trd", "--train_dataset",
+                    help="Path to training dataset")
 parser.add_argument("-e", "--epochs", help="Number of epochs")
 parser.add_argument("-lr", "--learning_rate", help="Learning rate")
 parser.add_argument("-b", "--batch_size", help="Batch size of dataloader")
 parser.add_argument("-n", "--num_workers",
                     help="Number of workers in dataloader")
-parser.add_argument("-trd", "--train_dataset",
-                    help="Path to training dataset")
-# parser.add_argument("-tsd", "--test_dataset",
-#                     help="Path to testing dataset")
-parser.add_argument("-s", "--save", help="Name of the .pkt file to save")
+parser.add_argument("-s", "--save", help="Name of the .pth file to save")
 parser.add_argument("-o", "--output", help="Show Output")
 
 # Read arguments from command line
@@ -57,7 +55,8 @@ params = [['epochs', EPOCHS],
           ]
 
 print('{:<20} | {:<30}'.format('Parameter', 'Value'))
-print('{:<20} {:30}'.format('---------------------', '----------------------------------------'))
+print('{:<20} {:30}'.format('---------------------',
+      '----------------------------------------'))
 for param in params:
     print('{:<20} | {:<30}'.format(param[0], param[1]))
 print('\n')
