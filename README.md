@@ -1,10 +1,22 @@
 # Hand-Sign-Recognizer
 
-- **American Sign Language (ASL) Interpreter**
+![python](https://img.shields.io/static/v1?logo=python&labelColor=3776AB&color=ffffff&logoColor=ffffff&style=flat-square&label=%20&message=Python3)
+![pytorch](https://img.shields.io/static/v1?logo=pytorch&labelColor=EE4C2C&color=ffffff&logoColor=ffffff&style=flat-square&label=%20&message=Pytorch)
 
----
+![linux](https://img.shields.io/static/v1?logo=linux&labelColor=FCC624&color=ffffff&logoColor=000000&style=flat-square&label=%20&message=Linux)
+![macos](https://img.shields.io/static/v1?logo=macos&labelColor=000000&color=ffffff&logoColor=ffffff&style=flat-square&label=%20&message=macOS)
+![windows](https://img.shields.io/static/v1?logo=windows&labelColor=0078D6&color=ffffff&logoColor=ffffff&style=flat-square&label=%20&message=Windows)
 
-## Setting the Environment
+- Supported for Static RGB Images
+
+- Pretrained Model :  
+  <https://github.com/nzx9/Hand-Sign-Recognizer/blob/main/models/pretrained_models/static_asl_rgb.pth>
+
+- Pretrained Model Used American Sign Language (ASL)
+
+- Pretrained Model Trained Using : <https://www.kaggle.com/grassknoted/asl-alphabet>
+
+## Setting Up the Environment
 
 ### Mac OS, Linux Or Unix
 
@@ -99,6 +111,6 @@ python3 tester.py -tsd [? path_to_test_dataset] -b [? batch_size] -n [? num_work
 python tester.py -tsd [? path_to_test_dataset] -b [? batch_size] -n [? num_workers] -p [? pth_file] -s [? save_to] -c [? confusion_matrix] -o [? output]
 ```
 
-- Static American Sign Language Interpreter using RGB Images
+## License
 
-- dataset: <https://www.kaggle.com/grassknoted/asl-alphabet>
+[BSD-3-Clause License](https://github.com/nzx9/dsc/blob/main/LICENSE)
