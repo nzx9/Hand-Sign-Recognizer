@@ -31,7 +31,7 @@ class Dataloader:
 
     def test_loader(self, batch_size, workers):
         if os.path.isdir(self.test_path):
-            test_transforms = transforms.Compose([transforms.Resize(224),
+            test_transforms = transforms.Compose([transforms.Resize((224, 224)),
                                                   transforms.ToTensor(),
                                                   transforms.Normalize([0.5, 0.5, 0.5],
                                                                        [0.5, 0.5, 0.5])])
@@ -39,6 +39,6 @@ class Dataloader:
             test_dataset = datasets.ImageFolder(
                 self.test_path, transform=test_transforms)
 
-            return torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers=workers)
+            return torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers=workers), test_dataset
         else:
             raise NotADirectoryError("[x] Error: Set path to testing dataset")
