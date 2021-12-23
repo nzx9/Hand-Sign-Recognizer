@@ -111,6 +111,12 @@ python3 tester.py -tsd [? path_to_test_dataset] -b [? batch_size] -n [? num_work
 python tester.py -tsd [? path_to_test_dataset] -b [? batch_size] -n [? num_workers] -p [? pth_file] -s [? save_to] -c [? confusion_matrix] -o [? output]
 ```
 
+#### Pretrained Model
+
+- Training Accuracy: 99.044% (86168/ 87000)
+
+- Testing Accuracy: 100% (26/ 26)
+
 ## License
 
 [BSD-3-Clause License](https://github.com/nzx9/dsc/blob/main/LICENSE)
